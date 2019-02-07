@@ -1,5 +1,11 @@
-From ubuntu/16.04
-RUN apt-get update
+FROM ubuntu:16.04
+MAINTAINER Sarah Nadi, nadi@ualberta.ca
+
+
+RUN apt-get update 
+
+# Tools necessary for CMPUT 201
+
 RUN apt-get install -y gcc-5
 RUN apt-get install make
 RUN ln -s /usr/bin/gcc-5 /usr/bin/gcc
