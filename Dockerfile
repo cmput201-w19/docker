@@ -8,5 +8,6 @@ RUN apt-get update
 
 RUN apt-get install -y gcc-5
 RUN apt-get install -y make
+RUN apt-get update
 RUN apt-get install -y valgrind
 RUN ln -s /usr/bin/gcc-5 /usr/bin/gcc
