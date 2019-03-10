@@ -7,6 +7,6 @@ RUN apt-get update
 # Tools necessary for CMPUT 201
 
 RUN apt-get install -y gcc-5
-RUN apt-get install make
-RUN apt-get install valgrind
+RUN apt-get install -y make
+RUN apt-get install -y valgrind
 RUN ln -s /usr/bin/gcc-5 /usr/bin/gcc
